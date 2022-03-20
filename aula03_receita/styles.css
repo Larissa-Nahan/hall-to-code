@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   background-color: #f0f0f0;
   display: flex;
@@ -12,12 +16,11 @@ body {
 .box {
   background-color: white;
   border-radius: 5px;
-  padding: 20px;
+  padding: 27px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   margin-top: 24px;
-  /* min-width: 798px; */
   max-width: 798px;
 }
 
@@ -26,9 +29,6 @@ body {
   text-transform: uppercase;
   font-size: 23px;
   font-weight: 700;
-  /* width: 798px;
-  display: flex;
-  justify-content: center; */
 }
 
 .sub-title {
@@ -105,11 +105,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 798px;
 }
 
 .ingredients {
   margin-top: 12px;
+  list-style: none;
 }
 
 .ingredients li:before {
@@ -117,7 +119,8 @@ body {
   font-size: 30px;
   vertical-align: middle;
   line-height: 20px;
-  margin: 0 10px;
+  margin-right: 10px;
+  margin-left: -1em;
 }
 
 ol {
@@ -127,7 +130,7 @@ ol {
 ol li {
   display: block;
   margin-bottom: 20px;
-  margin-left: 37px;
+  /* margin-left: 37px; */
 }
 ol li::before {
   display: inline-block;
