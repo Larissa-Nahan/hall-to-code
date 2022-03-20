@@ -1,87 +1,124 @@
-<head>
-  <title>Aula 02 - Formulário</title>
+<html lang="pt-BR">
+  <head>
+    <title>Aula 02 - Formulário</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-
-<body>
-  <h1 class="title">Faça seu cadastro</h1>
-
-  <div class="box-column">
-    <label class="label-field" for="name-field">Nome Completo</label>
-    <input type="text" placeholder="Digite seu nome completo" id="name-field" />
-  </div>
-
-  <div class="box-row">
-    <div class="box-column">
-      <label for="date-field">Data de nascimento</label>
-      <input type="date" />
-    </div>
-
-    <div class="box-column">
-      <label class="label-country" required>Pais</label>
-      <select>
-        <option>Selecionar</option>
-        <option>Brasil</option>
-        <option>China</option>
-        <option>Estados Unidos</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="box-column">
-    <label class="label-gender">Gênero:</label>
-    <div class="box-row">
-      <input type="radio" name="input-genre" /><label class="radio"
-        >Feminino</label
-      >
-      <input type="radio" name="input-genre" /><label class="radio"
-        >Masculino</label
-      >
-      <input type="radio" name="input-genre" /><label class="radio"
-        >Não declarado</label
-      >
-    </div>
-  </div>
-
-  <div class="box-column">
-    <label>E-mail</label>
-    <input type="email" placeholder="Digite seu e-mail" id="email-field" />
-  </div>
-
-  <div class="box-column">
-    <label>Digite sua senha</label>
-    <input type="password" placeholder="Digite uma senha" id="password-field" />
-  </div>
-
-  <div class="box-column">
-    <label>Confirme sua senha</label>
-    <input
-      type="password"
-      placeholder="Confirme sua senha"
-      id="password-field"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
     />
-  </div>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-  <div class="box-row">
-    <input type="checkbox" />
-    <p class="eula">
-      Aceito os
-      <a target="_blank" rel="nofollow" href="termos-condicoes.html">termos e condições</a>
-      e concordo com as 
-      <a target="_blank" rel="nofollow" href="politicas-privacidade.html">políticas de privacidade</a>
-       do Hall to Code
-    </p>
-  </div>
+  <body>
+    <section class="container">
+      <form class="form">
+        <h1 class="title">Faça seu cadastro</h1>
 
-  <button>Cadastrar</button>
+        <div class="box">
+          <label class="label-field" for="name-field">Nome Completo</label>
+          <input
+            type="text"
+            placeholder="Digite seu nome completo"
+            id="name-field"
+            class="field-input"
+            required
+          />
+        </div>
 
-  <p>Já tem uma conta no Hall to Code? 
-    <a class="login" rel="nofollow" href="login.html">Entre agora</a></p>
-</body>
+        <div class="double-box">
+          <div class="space-between">
+            <label class="label-field">Data de nascimento</label>
+            <input class="field-input" type="date" />
+          </div>
+
+          <div class="space-between">
+            <label class="label-field country-label" required>Pais</label>
+            <select class="select">
+              <option>Selecionar</option>
+              <option>Brasil</option>
+              <option>China</option>
+              <option>Estados Unidos</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="box-genre box">
+          <span class="genre-title">Gênero:</span>
+          <div class="options-genre">
+            <div class="select-genre">
+              <input type="radio" name="input-genre" checked />
+              <label class="radio">Feminino</label>
+            </div>
+
+            <div class="select-genre">
+              <input type="radio" name="input-genre" />
+              <label class="radio">Masculino</label>
+            </div>
+
+            <div class="select-genre">
+              <input type="radio" name="input-genre" />
+              <label class="radio">Não declarado</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <label class="label-field">E-mail</label>
+          <input
+            type="email"
+            placeholder="Digite seu e-mail"
+            id="email-field"
+            class="field-input"
+            required
+          />
+        </div>
+
+        <div class="box">
+          <label class="label-field">Senha</label>
+          <input
+            type="password"
+            placeholder="Crie uma senha"
+            id="password-field"
+            class="field-input"
+            required
+          />
+        </div>
+
+        <div class="box">
+          <label class="label-field">Confirme sua senha</label>
+          <input
+            type="password"
+            placeholder="Confirmar senha"
+            id="password-field"
+            class="field-input"
+            required
+          />
+        </div>
+
+        <div class="terms">
+          <input type="checkbox" class="checkbox-field" required />
+          <p>
+            Aceito os
+            <a target="_blank" rel="nofollow" href="termos-condicoes.html"
+              >termos e condições</a
+            >
+            e concordo com as
+            <a target="_blank" rel="nofollow" href="politicas-privacidade.html"
+              >políticas de privacidade</a
+            >
+            do Hall to Code
+          </p>
+        </div>
+
+        <button class="button">Cadastrar</button>
+
+        <p class="account">
+          Já tem uma conta no Hall to Code?
+          <a class="login" rel="nofollow" href="html/login.html">Entre agora</a>
+        </p>
+      </form>
+    </section>
+  </body>
+</html>
