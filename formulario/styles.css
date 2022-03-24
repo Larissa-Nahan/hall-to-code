@@ -12,12 +12,21 @@ body {
   justify-content: center;
 }
 
+.container-register {
+  max-width: 396px;
+  width: 100%;
+}
+
+.conteiner-login {
+  max-width: 515px;
+  width: 100%;
+}
+
 .form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 396px;
 }
 
 .title {
@@ -33,7 +42,7 @@ body {
   margin-bottom: 24px;
 }
 
-.options-genre{
+.options-genre {
   display: flex;
   justify-content: space-between;
 }
@@ -42,7 +51,7 @@ body {
   width: 48%;
 }
 
-.country-label::after{
+.country-label::after {
   content: "*";
   color: red;
 }
@@ -106,10 +115,10 @@ a {
   color: #39c2e4;
 }
 
-.account{
+.account {
   margin-bottom: 30px;
 }
 
-.login{
+.login {
   text-decoration: none;
 }
