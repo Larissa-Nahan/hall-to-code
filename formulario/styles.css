@@ -68,7 +68,11 @@ body {
   margin-bottom: 4px;
 }
 
-.field-input,
+.field-input {
+  padding: 12px 14px;
+  border: 1px solid #abb3ab;
+}
+
 .select {
   width: 100%;
   padding: 12px 14px;
