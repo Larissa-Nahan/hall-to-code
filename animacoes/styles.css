@@ -1,0 +1,196 @@
+body {
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+/*
+@keyframes no-no {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+img {
+  width: 300px;
+  animation-name: no-no;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes timing-text {
+  from {
+    left: 0;
+  }
+  to {
+    left: 150px;
+  }
+}
+
+.div {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  background-color: aliceblue;
+
+  animation-name: timing-text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+.div1 {
+  animation-timing-function: linear;
+}
+.div2 {
+  animation-timing-function: ease;
+}
+.div3 {
+  animation-timing-function: ease-in;
+}
+.div4 {
+  animation-timing-function: ease-out;
+}
+.div5 {
+  animation-timing-function: ease-in-out;
+}
+.div6 {
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes timing-text {
+    0% {
+        background-color: aqua;
+        left: 0%;
+        top: 0;
+    }
+    25% {
+        background-color: lightcoral;
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        background-color: gold;
+        left: 50%;
+        top: 50px;
+    }
+    70%{
+        background-color: red;
+    }
+    100%{
+        background-color: hotpink;
+    }
+}
+
+.div6 {
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+  /* 0% {
+    transform: rotate(1turn);
+  }
+  100% {
+    transform: rotate(360deg);
+  } */
+}
+
+/* div {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 16px solid rgba(169, 167, 167, 0.904);
+  border-top: 16px solid rgba(0, 0, 0, 0.687);
+  border-radius: 50%;
+
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+} */
+
+@keyframes loading {
+  0%,
+  50%,
+  100% {
+    /* transform: scaleY(0.1); */
+    transform: scale(0);
+    filter: blur(0px);
+  }
+  50% {
+    /* transform: scaleY(.2); */
+    transform: scale(1);
+    background-color: salmon;
+    filter: blur(1.5px);
+  }
+  100% {
+    /* transform: scaleY(0.1); */
+    transform: scale(1.4);
+    background-color: transparent;
+    filter: blur(3px);
+  }
+}
+
+/* div {
+  width: 70px;
+  height: 70px;
+  margin: 0 3px;
+  background-color: white;
+  border-radius: 50%;
+
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: bottom center;
+} */
+
+/* .div1 {
+  animation-delay: 0.1s;
+  background-color: blueviolet;
+}
+.div2 {
+    animation-delay: 0.3s;
+    background-color: brown;
+}
+.div3 {
+    animation-delay: 0.5s;
+    background-color: fuchsias;
+}
+.div4 {
+    animation-delay: 0.7s;
+    background-color: cornflowerblue;
+}
+.div5 {
+    animation-delay: 0.9s;
+    background-color: gold;
+} */
+
+@keyframes text-animation {
+  100% {
+    letter-spacing: 20px;
+    color: aqua;
+  }
+}
+
+div {
+  display: block;
+  font-size: 100px;
+}
+
+div:hover {
+  animation: text-animation 3s ease-in-out infinite alternate;
+}
